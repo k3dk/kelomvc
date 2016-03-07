@@ -24,6 +24,10 @@
                 $controller = new ContactsController();
 
                 break;
+            case 'users':
+
+                $controller = new UsersController();
+                break;
 
 
         }
@@ -38,7 +42,8 @@
 
     $controllers = array('pages'    => ['home','error'],
                          'contacts'  => ['contact','indexcontact'],
-                         'posts'    => ['index','show']
+                         'posts'    => ['index','show'],
+                         'users'    => ['showUser','korisnici']
 
     );
 
