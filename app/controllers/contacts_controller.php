@@ -4,14 +4,13 @@
     {
         public function contact()
         {
-            $ime = 'Kostadin ';
-            $prezime = 'Keljtanoski';
+            $test = 'test';
             require_once ('app/views/contacts/contact.php');
         }
 
-        public function error_contact()
+        public function contactPage()
         {
-            require_once ('app/views/contacts/error.php');
+            require_once ('app/views/contacts/contact-page.php');
         }
     }
 

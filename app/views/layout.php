@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href='/kelomvc'>Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href='?controller=contacts'>Contact</a></li>
+                        <li><a href='?controller=contacts&action=contact-page'>Contact</a></li>
                         <li><a href='?controller=posts&action=index'>Posts</a></li>
                     </ul>
 
