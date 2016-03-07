@@ -15,12 +15,13 @@
                 break;
             case 'posts':
                 require_once ('app/models/post.php');
-                $controller = new PostController();
+                $controller = new PostsController();
 
                 break;
 
-            case 'contact':
-                $controller = new ContactController();
+            case 'contacts':
+
+                $controller = new ContactsController();
 
                 break;
 
@@ -36,8 +37,9 @@
     //ovie se smetaat za dozvoleni vrednosti
 
     $controllers = array('pages'    => ['home','error'],
-                         'posts'    => ['index','show'],
-                         'contact'  => ['contact','error']
+                         'contacts'  => ['contact','error_contact'],
+                         'posts'    => ['index','show']
+
     );
 
     //proverka dali pobaranite kontroleri i akcii se dozvoleni za uptoreba

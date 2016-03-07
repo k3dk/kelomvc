@@ -6,7 +6,7 @@
             public function index()
             {
                 $posts = Post::all();
-                require_once ('app/views/posts/index.php')
+                require_once ('app/views/posts/index.php');
             }
 
             public function show()

@@ -14,7 +14,7 @@
                 $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
 
 
-                self::$instance = new PDO('mysql:host=localhost:8080;dbname=phpmvc','kelomvc','kelomvc',$pdo_options);
+                self::$instance = new PDO('mysql:host=localhost:3306;dbname=phpmvc','kelomvc','kelomvc',$pdo_options);
             }
             return self::$instance;
         }

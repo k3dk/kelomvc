@@ -23,6 +23,24 @@
             {
                 $list[] = new Post($post['id'], $post['author'],$post['content']);
             }
+
+
+            return $list;
+        }
+
+        public static function find($id)
+        {
+            $db = Db::getInstance();
+
+            //proverka dali dobieniot id e integer
+            $id = intval($id);
+            $req = $db->prepare('SELECT * FROM posts WHERE id = :id');
+            $req->execute(array('id' => $id));
+            $post = $req->fetch();
+
+            return new Post($post['id'], $post['author'], $post['content']);
+
+
         }
     }
 

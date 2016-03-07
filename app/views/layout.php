@@ -38,8 +38,9 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/kelomvc">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="/kelomvc/contact">Contact</a></li>
+                        <li class="active"><a href='/kelomvc'>Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href='?controller=contacts'>Contact</a></li>
+                        <li><a href='?controller=posts&action=index'>Posts</a></li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->
@@ -47,7 +48,7 @@
         </nav>
     </header>
 
-            <?php require_once ('core/routes.php'); ?>
+            <?php require_once ('routes.php'); ?>
 
     <footer>
         <?php echo $copyright; ?>
