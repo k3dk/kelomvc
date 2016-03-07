@@ -37,7 +37,7 @@
     //ovie se smetaat za dozvoleni vrednosti
 
     $controllers = array('pages'    => ['home','error'],
-                         'contacts'  => ['contact','contactPage'],
+                         'contacts'  => ['contact','indexcontact'],
                          'posts'    => ['index','show']
 
     );

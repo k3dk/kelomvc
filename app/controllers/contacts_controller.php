@@ -8,9 +8,9 @@
             require_once ('app/views/contacts/contact.php');
         }
 
-        public function contactPage()
+        public function indexcontact()
         {
-            require_once ('app/views/contacts/contact-page.php');
+            require_once ('app/views/contacts/index.php');
         }
     }
 
